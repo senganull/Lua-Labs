@@ -13,7 +13,7 @@ local function calculate_damage(base_attack, defense)
     if damage < 0 then 
         damage = 0
     end
-    local is_critical = damage > 50 --unkwown
+    local is_critical = damage > 50
 
     --Luaは複数の戻り値をカンマ区切りで返せる
     return damage, is_critical
